@@ -1,0 +1,51 @@
+{
+  "name": "ajmelian/secure-audit-trail",
+  "description": "Sistema seguro de auditoría en PHP 8 con cifrado, cadena de integridad y soporte para RabbitMQ.",
+  "keywords": [
+    "auditoría",
+    "seguridad",
+    "cifrado",
+    "php8",
+    "secure",
+    "hashchain",
+    "rabbitmq",
+    "owasp",
+    "log",
+    "blockchain-like",
+    "traceability"
+  ],
+  "type": "library",
+  "license": "GPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "Aythami Melián Perdomo",
+      "email": "ajmelper@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^8.1",
+    "ext-pdo": "*",
+    "ext-openssl": "*",
+    "php-amqplib/php-amqplib": "^3.5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "SecureAuditTrail\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "SecureAuditTrail\\Tests\\": "tests/"
+    }
+  },
+  "bin": [
+    "bin/secure-audit"
+  ],
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
+
